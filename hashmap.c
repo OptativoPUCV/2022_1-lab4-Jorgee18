@@ -92,7 +92,12 @@ HashMap * createMap(long capacity) {
 
 void eraseMap(HashMap * map,  char * key) 
 {
-  long idx = hash(key, map->capacity );
+  if(searchMap(map,key));
+  {
+    map->buckets[map->current]->key = NULL;
+    map->size -= 1; 
+  }
+  /*long idx = hash(key, map->capacity );
   while(map->buckets[idx]!=NULL && map->buckets[idx]->key != NULL){
     if(is_equal(key, map->buckets[idx]->key))
     {
@@ -101,7 +106,7 @@ void eraseMap(HashMap * map,  char * key)
       map->buckets[idx]->key = NULL;
     }
     idx = (idx + 1) % map->capacity;
-  }
+  }*/
 }
 
 Pair * searchMap(HashMap * map,  char * key) 

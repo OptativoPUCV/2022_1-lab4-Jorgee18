@@ -8,3 +8,17 @@ Sat Apr  9 18:22:54 UTC 2022:
  1 file changed, 1 insertion(+)
  tests:  0|0
 7f3b28e
+Sat Apr  9 18:28:39 UTC 2022: 
+ hashmap.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:95:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   if(searchMap(map,key));
+   ^~
+hashmap.c:96:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   {
+   ^
+cc1: all warnings being treated as errors
+Compilation failed
+6bcabd9
