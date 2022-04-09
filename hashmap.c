@@ -80,7 +80,7 @@ void enlarge(HashMap * map)
   long tamanio;
   auxiliar = createMap(map->capacity);
   auxiliar->buckets = map->buckets;
-  tamanio map->capacity;
+  tamanio = map->capacity;
   
   map->capacity = map->capacity * 2;
   map = createMap(map->capacity);

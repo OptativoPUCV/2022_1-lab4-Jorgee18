@@ -207,3 +207,8 @@ hashmap.c:83:11: error: expected ‘;’ before ‘map’
 cc1: all warnings being treated as errors
 Compilation failed
 6fe42cd
+Sat Apr  9 20:16:53 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+b454110
