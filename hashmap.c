@@ -68,10 +68,9 @@ void enlarge(HashMap * map)
   
   map->capacity = map->capacity * 2;
   map = createMap(map->capacity);
-  
   while(cont < tamanio)
   {
-  if(auxiliar->buckets[cont] != NULL)
+    if(auxiliar[cont] != NULL)
     insertMap(map, auxiliar[cont]->key, auxiliar[cont]->value);
     cont++;
   }
