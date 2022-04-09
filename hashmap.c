@@ -86,7 +86,8 @@ void enlarge(HashMap * map)
   
   for(cont = 0; cont < map->capacity; cont++)
   {
-    auxiliar->buckets[cont] = map->buckets[cont];
+    auxiliar->buckets[cont]->key = map->buckets[cont]->key;
+    auxiliar->buckets[cont]->value = map->buckets[cont]->value;
   }
   
   /*map = createMap(map->capacity);
