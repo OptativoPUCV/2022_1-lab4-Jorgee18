@@ -133,3 +133,14 @@ hashmap.c:91:3: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 b6c99d1
+Sat Apr  9 19:06:54 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:86:3: error: statement with no effect [-Werror=unused-value]
+   for(cont; cont < map->capacity; cont++)
+   ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+68941c0
