@@ -193,3 +193,17 @@ Sat Apr  9 20:11:19 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 6158ee4
+Sat Apr  9 20:16:15 UTC 2022: 
+ hashmap.c | 21 ++++++++++-----------
+ 1 file changed, 10 insertions(+), 11 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:83:3: error: statement with no effect [-Werror=unused-value]
+   tamanio map->capacity;
+   ^~~~~~~
+hashmap.c:83:11: error: expected ‘;’ before ‘map’
+   tamanio map->capacity;
+           ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+6fe42cd
