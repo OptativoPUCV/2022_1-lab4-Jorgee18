@@ -97,6 +97,7 @@ void eraseMap(HashMap * map,  char * key)
     if(is_equal(key, map->buckets[idx]->key))
     {
       map->size = map->size - 1;
+      map->current = idx;
       map->buckets[idx]->key = NULL;
     }
     idx = (idx + 1) % map->capacity;
