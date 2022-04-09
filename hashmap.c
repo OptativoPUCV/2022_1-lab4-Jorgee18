@@ -144,9 +144,8 @@ Pair * nextMap(HashMap * map)
   long idx = (map->current + 1) % map->capacity;
   while(idx < map->capacity)
   {
-    if(map->buckets[idx] != NULL && map->buckets[idx]->key !=NULL)
+    if(map->buckets[idx] != NULL && map->buckets[idx]->key != NULL)
     {
-      map->current = idx;
       return map->buckets[idx];
     }
     idx = (idx + 1) % map->capacity;
