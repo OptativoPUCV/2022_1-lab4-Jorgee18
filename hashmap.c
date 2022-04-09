@@ -134,7 +134,7 @@ Pair * firstMap(HashMap * map)
       map->current = map->current;
       return map->buckets[map->current];
     }
-    mmap->current += 1;
+    map->current += 1;
   }
   return NULL;
 }
