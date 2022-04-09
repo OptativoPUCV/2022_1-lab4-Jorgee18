@@ -92,7 +92,7 @@ void enlarge(HashMap * map)
     cont++;
   }
 
-}
+}*/
 
 
 HashMap * createMap(long capacity) {
