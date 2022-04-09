@@ -188,3 +188,8 @@ hashmap.c:67:3: error: ‘tamano’ undeclared (first use in this function); did
 hashmap.c:67:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 12c955c
+Sat Apr  9 20:11:19 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+6158ee4

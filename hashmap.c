@@ -64,7 +64,7 @@ void enlarge(HashMap * map)
   int cont = 0;
   long tamanio;
   auxiliar = map->buckets;
-  tamano = map->capacity;
+  tamanio = map->capacity;
   map->capacity = map->capacity * 2;
   map = createMap(map->capacity);
   
