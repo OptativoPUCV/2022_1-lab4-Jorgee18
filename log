@@ -42,3 +42,15 @@ Sat Apr  9 18:33:52 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9e9e682
+Sat Apr  9 18:35:03 UTC 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:137:5: error: ‘mmap’ undeclared (first use in this function); did you mean ‘map’?
+     mmap->current += 1;
+     ^~~~
+     map
+hashmap.c:137:5: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+e8a0a4f
