@@ -78,17 +78,23 @@ void enlarge(HashMap * map)
     cont ++;
   }*/
 
-  /*HashMap *auxiliar;
+  HashMap *auxiliar;
   int cont = 0;
-  
-  map->capacity = map->capacity * 2;
   auxiliar = createMap(map->capacity);
-  
-  map = createMap(map->capacity);
-  for(cont = 0; cont < map->capacity; cont++)
+  while(cont < map->capacity)
   {
-    map->buckets[cont] = auxiliar->buckets[cont];
-  }*/
+    insertMap(auxiliar, map->buckets[cont]->key, map->buckets[cont]->value); 
+    cont++;
+  }
+  map->capacity = map->capacity * 2;
+  map = createMap(map->capacity);
+  cont = 0;
+  while(cont < map->capacity)
+  {
+    insertMap(map, auxiliar->buckets[cont]->key, auxiliar->buckets[cont]->value); 
+    cont++;
+  }
+  
   
 }
 

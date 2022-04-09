@@ -171,3 +171,8 @@ Sat Apr  9 19:20:55 UTC 2022:
  tests:  16|1
 total_score: 60/70
 3fec6f9
+Sat Apr  9 19:38:45 UTC 2022: 
+ hashmap.c | 20 +++++++++++++-------
+ 1 file changed, 13 insertions(+), 7 deletions(-)
+ tests:  0|0
+33841ee
