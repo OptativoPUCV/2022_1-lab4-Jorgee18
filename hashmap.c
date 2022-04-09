@@ -68,7 +68,8 @@ void enlarge(HashMap * map)
   tamanio = map->capacity;
   
   map->capacity = map->capacity * 2;
-  map = createMap(map->capacity);
+  map->buckets = (Pair**)calloc(map->capacity, sizeof(Pair*));
+  map->size = 0;
   while(cont < tamanio)
   {
     if(auxiliar[cont] != NULL)
