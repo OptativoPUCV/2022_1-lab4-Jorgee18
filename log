@@ -298,3 +298,9 @@ Sat Apr  9 20:44:01 UTC 2022:
  1 file changed, 17 deletions(-)
  tests:  0|0
 ee7c712
+Sat Apr  9 20:44:18 UTC 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  17|0
+total_score: 70/70
+3779a21
