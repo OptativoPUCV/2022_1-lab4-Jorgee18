@@ -74,8 +74,8 @@ void enlarge(HashMap * map)
   
   while(cont < tamanioOriginal)
   {
-    if(auxiliar->buckets[cont] != NULL)
-    insertMap(map, auxiliar->buckets[cont]->key, auxiliar->buckets[cont]->value); 
+    if(auxiliar->buckets[cont] != NULL && auxiliar->buckets[cont]->key != NULL)
+      insertMap(map, auxiliar->buckets[cont]->key, auxiliar->buckets[cont]->value); 
     cont++;
   }
 }
