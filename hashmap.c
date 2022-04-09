@@ -126,7 +126,7 @@ Pair * searchMap(HashMap * map,  char * key)
 
 Pair * firstMap(HashMap * map) 
 {
-  map->current = -1;
+  map->current = 0;
   while(map->current < map->capacity)
   {
     if(map->buckets[map->current] != NULL)
