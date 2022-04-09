@@ -212,3 +212,24 @@ Sat Apr  9 20:16:53 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 b454110
+Sat Apr  9 20:26:37 UTC 2022: 
+ hashmap.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:74:14: error: ‘*auxiliar’ is a pointer; did you mean to use ‘->’?
+   if(auxiliar->buckets[cont] != NULL)
+              ^~
+              ->
+hashmap.c:74:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   if(auxiliar->buckets[cont] != NULL)
+   ^~
+hashmap.c:76:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     cont++;
+     ^~~~
+hashmap.c:115:3: error: "/*" within comment [-Werror=comment]
+   /*long idx = hash(key, map->capacity );
+    
+cc1: all warnings being treated as errors
+Compilation failed
+18f0328
