@@ -62,22 +62,22 @@ void enlarge(HashMap * map)
   enlarge_called = 1; //no borrar (testing purposes)
   HashMap *auxiliar;
   int cont = 0;
-  long tamanio;
+  long tamanioOriginal;
   auxiliar = createMap(map->capacity);
   auxiliar->buckets = map->buckets;
-  tamanio = map->capacity;
+  tamanioOriginal = map->capacity;
   
   map->capacity = map->capacity * 2;
   map->buckets = (Pair**)calloc(map->capacity, sizeof(Pair*));
   map->size = 0;
   cont = 0;
-  while(cont < tamanio)
+  
+  while(cont < tamanioOriginal)
   {
     if(auxiliar->buckets[cont] != NULL)
     insertMap(map, auxiliar->buckets[cont]->key, auxiliar->buckets[cont]->value); 
     cont++;
   }
-
 }
 
 
