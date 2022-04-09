@@ -126,17 +126,17 @@ Pair * searchMap(HashMap * map,  char * key)
 
 Pair * firstMap(HashMap * map) 
 {
-  long idx = 0;
-  while(idx < map->capacity)
+  map->current = -1;
+  while(map->current < map->capacity)
   {
-    if(map->buckets[idx] != NULL)
+    if(map->buckets[map->current] != NULL)
     {
-      map->current = idx;
-      return map->buckets[idx];
+      map->current = map->current;
+      return map->buckets[map->current];
     }
-    idx = (idx + 1) % map->capacity;
+    map->current = (map->current + 1) % map->capacity;
   }
-  return nextMap(map);
+  return NULL;
 }
 
 Pair * nextMap(HashMap * map) 
