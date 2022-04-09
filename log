@@ -22,3 +22,8 @@ hashmap.c:96:3: note: ...this statement, but the latter is misleadingly indented
 cc1: all warnings being treated as errors
 Compilation failed
 6bcabd9
+Sat Apr  9 18:28:52 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+e50522d
