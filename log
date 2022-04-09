@@ -176,3 +176,15 @@ Sat Apr  9 19:38:45 UTC 2022:
  1 file changed, 13 insertions(+), 7 deletions(-)
  tests:  0|0
 33841ee
+Sat Apr  9 20:11:10 UTC 2022: 
+ hashmap.c | 22 +++++++++-------------
+ 1 file changed, 9 insertions(+), 13 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:67:3: error: ‘tamano’ undeclared (first use in this function); did you mean ‘tamanio’?
+   tamano = map->capacity;
+   ^~~~~~
+   tamanio
+hashmap.c:67:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+12c955c

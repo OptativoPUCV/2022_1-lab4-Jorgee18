@@ -60,25 +60,21 @@ void insertMap(HashMap * map, char * key, void * value) {
 void enlarge(HashMap * map) 
 {
   enlarge_called = 1; //no borrar (testing purposes)
-  /*Pair **auxiliar;
+  Pair **auxiliar;
   int cont = 0;
+  long tamanio;
+  auxiliar = map->buckets;
+  tamano = map->capacity;
   map->capacity = map->capacity * 2;
-  auxiliar = (Pair**) calloc(map->capacity,sizeof(Pair*));
-  while(map->buckets[cont]!=NULL && map->buckets[cont]->key != NULL)
-  {
-    auxiliar[cont] = createPair(map->buckets[cont]->key, map->buckets[cont]->value);
-    cont = (cont + 1) % map->capacity;
-  }
-  map->size = 0;
-  cont = hash(map->buckets[0]->key, map->capacity);
   map = createMap(map->capacity);
-  while(cont)
+  
+  while(cont < tamanio)
   {
     insertMap(map, auxiliar[cont]->key, auxiliar[cont]->value);
-    cont ++;
-  }*/
+    cont++;
+  }
 
-  HashMap *auxiliar;
+  /*HashMap *auxiliar;
   int cont = 0;
   auxiliar = createMap(map->capacity);
   while(cont < map->capacity)
@@ -93,7 +89,7 @@ void enlarge(HashMap * map)
   {
     insertMap(map, auxiliar->buckets[cont]->key, auxiliar->buckets[cont]->value); 
     cont++;
-  }
+  }*/
   
   
 }
