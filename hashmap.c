@@ -136,7 +136,7 @@ Pair * firstMap(HashMap * map)
     }
     idx = (idx + 1) % map->capacity;
   }
-  return NULL;
+  return nextMap(map);
 }
 
 Pair * nextMap(HashMap * map) 
