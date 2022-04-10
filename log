@@ -316,3 +316,14 @@ Sat Apr  9 21:43:02 UTC 2022:
  tests:  17|0
 total_score: 70/70
 275f483
+Sun Apr 10 20:02:09 UTC 2022: 
+ hashmap.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:78:30: error: ‘*auxiliar’ is a pointer; did you mean to use ‘->’?
+       insertMap(map, auxiliar->key, auxiliar[cont]->value);
+                              ^~
+                              ->
+Compilation failed
+6b73634
