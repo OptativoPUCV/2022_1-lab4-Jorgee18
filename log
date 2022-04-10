@@ -327,3 +327,9 @@ hashmap.c:78:30: error: ‘*auxiliar’ is a pointer; did you mean to use ‘->�
                               ->
 Compilation failed
 6b73634
+Sun Apr 10 20:02:22 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|0
+total_score: 70/70
+1667e8b
