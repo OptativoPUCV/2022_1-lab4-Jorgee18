@@ -61,7 +61,7 @@ void enlarge(HashMap * map)
 {
   enlarge_called = 1; //no borrar (testing purposes)
   Pair **auxiliar;
-  int cont = 0;
+  int cont;
   long tamanioOriginal;
   
   auxiliar = map->buckets;
